@@ -29,6 +29,28 @@
 
   console.log(power(2, 8));
 
+function testPowerZero (){
+
+let result = power(3, 0);
+  console.assert(result === 1, {
+    "function": 'power(3, 0)',
+    "expected": 1,
+    "result": result, 
+  });
+}
+testPowerZero();
+
+
+function testPowerOne (){
+let result = power(3, 1);
+  console.assert(result === 3, {
+    "function": 'power(3, 1)',
+    "expected": 3,
+    "result": result, 
+  });
+}
+testPowerOne();
+
 
 function factorial(x){
   var total = 1;
@@ -37,8 +59,8 @@ function factorial(x){
   }
   return total;
 }
-
 console.log (factorial(4));
+
 
 
 function fibonacci(x) {
